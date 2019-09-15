@@ -15,6 +15,7 @@ Using a social messaging interface as a use case, we focus on the need to co-des
 <!-- We will conclude by issuing recommended design patterns and principles illustrated via best practices for decentralized applications. -->
 
 <!-- ## Requirements -->
+## Introduction
 ## User flows by comparison
 
 ### Composing a private message
@@ -33,4 +34,5 @@ Using a social messaging interface as a use case, we focus on the need to co-des
 ## Design patterns and principles
 ### Original design principles
 ### New principles
+## Conclusion
 ## Glossary
