@@ -53,7 +53,7 @@ Due to the centrality that it plays in solving the issues of naming, readers are
 
 ## User flows by comparison
 
-We have decided to perform this study by starting with a well known interface to decentralized social media software, [Mastodon](https://joinmastodon.org/)'s default web interface.
+We have decided to perform this analysis by starting with a well known interface to decentralized social media software, [Mastodon](https://joinmastodon.org/)'s default web interface.
 We will examine the current behavior of the interface with a critical eye for security concerns, present proposed modifications for the interface where appropriate, and then examine what security benefits those modifications would bring.
 
 What we are not trying to do is to criticize Mastodon for having a particularly "bad" interface.
