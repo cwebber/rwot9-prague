@@ -180,10 +180,128 @@ We do, however, hope that this paper will be able to contribute somewhat towards
 <!-- Gargron’s response: -->
 <!-- “The completion prioritizes people you follow. I personally remember display names more than usernames. A petname system would provide convenience in case of people who change their display name often for jokes, but I don't see what protections it would provide that prioritizing people you follow doesn't. It's not like you would define petnames for people you don't follow, would you?” https://mastodon.social/@Gargron/102730145345440621 -->
 
-
 ## Design patterns and principles
-### Original design principles
-### New principles
+
+<!-- TODO: Introduce the concept of the ‘System Image’ and the ‘User Model’ to help frame the 10 principles and the rest of the paper. -->
+
+### TODO: Original design principles
+
+For now we leave it with the 10 principles mentioned in the Ka-Ping Yee’s seminal paper on secure UI criteria https://www2.eecs.berkeley.edu/Pubs/TechRpts/2002/CSD-02-1184.pdf
+
+- **Path of Least Resistance:** To the greatest extent possible, the natural way to do any task should also be the secure way. 
+- **Appropriate Bounds:** The interface should expose, and the system should enforce, distinctions between objects and between actions along boundaries[f] that matter to the user. 
+- **Explicit Authority:** A user’s authorities must only be provided to other actors as a result of an explicit action that is understood by the user to imply granting. 
+- **Visibility:** The interface should allow the user to easily review any active authority relationships that would affect security-relevant decisions. 
+- **Revocability:** The interface should allow the user to easily revoke authorities that the user has granted wherever revocation is possible. 
+- **Expected Ability:** The interface must not generate the impression that it is possible to do something that cannot actually be done. 
+- **Trusted Path:** The interface must provide an unspoofable and faithful communication channel between the user and any entity trusted to manipulate authorities on the user’s behalf. 
+- **Identifiability:** The interface should enforce that distinct objects and distinct actions have unspoofably identifiable and distinguishable representations. 
+- **Expressiveness:** The interface should provide enough expressive power (a) to describe a safe security policy without undue difficulty; and (b) to allow users to express security policies in terms that fit their goals. 
+- **Clarity:** The effect of any security-relevant action must be clearly apparent to the user before the action is taken. 
+
+### TODO: New principles
+
+> Fundamental Tradeoff:
+> 
+> **TODO:** Add the tradeoff curve image
+> 
+> The blue arrow is reflects the “optimal direction of progress” while using the system[c]. We want to understand a “secure user interface” as an education path towards more secure user behaviour. We also want to ensure that risky choices (“advanced features”) are fully made aware of.
+> 
+> We split principles into PASSIVE (reading) and ACTIVE (writing or posting) UI principles
+> 
+> - The capacity to understand the meaning of what’s displayed is the pre-condition to meaningfully cause desired action by writing. In most cases, mental models for writing (active) are formed AFTER models for reading (passive) are considered to be established.
+> - Which means: we want clear indicating between read vs write modes (with even more clear indication when its public vs private write)
+> - Example of modern mode-change between[d] passive/active: the pencil in github direct edit - it switches between rendered representation VS markdown source. In this case a private write?
+> 
+> Which brings us to a terminology proposal for 3 contexts that we want help distinguish in UIs of “online social network”:
+> 
+> 1. Personally Private
+> 2. Socially Private (within groups)
+> 3. Public
+> 
+> The history free appearance of the UI is not adequate to know how to interpret it - you have to know something about the system. That is the “Inverse” of the hover UI element - you also have to history free appearance - so you are depend as little as possible to the history of how you got here..
+> 
+> Indication of “trustability” of people represented in the interface (via petnames, edgenames, etc.)
+> 
+> Surface simplicity, with access to complexity for the users that want it.
+> 
+> Preventing phishing attacks, and conveying that in the design.
+> 
+> Recognizing divergence of a user’s mental model of interface functionality with designed model. Strive to ensure that these divergences fail harmlessly, and correct user’s model.
+
+#### Always strive for clear representation of context boundaries
+
+> This one is related to the principle of “Appropriate Bounds” from Ka-Ping Yee’s seminal paper.
+> 
+> 
+> Simple example: “Picture-in-Picture Attack”
+> 
+> 
+> An attacker generates an image which contains a complex mockup of UI elements with the aim to be visually indistinguishable from actual UI elements as used by the victims viewing application.
+> 
+> 
+> This attack works whenever the visual representation of the boundary between these two contexts is missing:
+> 
+> 
+> 1. “All characters/symbols in this area are rendered by local (the victims) system” - a.k.a.: “what I am seeing are actual UI elements - they are drawn by the viewer application”
+> 2. “All characters/symbols in this area are rendered by remote (the attackers) system” - a.k.a.: “what I am seeing in this area is a reproduction that was rendered in a completely different context than my viewing application”
+> 
+> 
+> So, if a post contains a picture and that picture is NOT marked explicitly marked as “context B” in the viewer - the mental model divergence may always happen, such that: “this is context B within context A” is mistaken for “everything here is the same context A”.
+> 
+> 
+> Another example that is particularly relevant for federated systems: by using centrally managed namespaces for the past decades (e.g. the collision free namespace of twitter handles) mental models have been established within us that may cause a divergence from the actual structure of the federated system at hand. In other words: we are not used to  
+> 
+> 
+> context of namespaces
+> 
+> “legacy mental model” is the starting point for many when they start to use a federated system.
+
+#### Inertia - prefer the familiar
+
+> Two different emphasis:
+> 
+> * Intuitions before people come in. (examples: distinguish between sending public/private by making public sending look “twitter-like” and private sending “email-like”) Ensure users know when they are performing a public write action instead of a private write.
+> * Inertia: once you had interaction with system. At a later time it should bias in favor of continuity. Those fit better with memory. Example: two different pathways in a history free way.
+> 
+> 
+> Also important: clearly highlight when something NEW (with key difference in consequences, relative to the OLD) is about to be triggered.
+
+#### When introducing new namespaces (eg petnames, or localnames) tie it to the mental model of familiar namespaces, e.g “contacts list”
+
+#### Progressive UX
+
+> Example: the progress of “just looking” to “hovering” (user indication of wanting learn more about the meaning)
+
+> Example: When I don’t see what is displayed when hovering - I should not be lead to something that the “revealed by hovering” info would have me prevented me from.
+
+#### What about Corroboration?
+
+> Example: corroboration between multiple paths: if only one path is shown instead of multiple paths when hovering.
+
+> The core misalignment seems to be:
+> “Set of actions that preserve security” - VS - “Set of actions that I THINK preserve security”
+
+#### Indicate source of name assignment [e]
+
+
+#### When Action is displayed as revocable but in reality it’s not
+
+#### Call for interface elements that clearly indicate it’s a decentralized app
+
+> encapsulation?
+
+#### Further remarks: SORT THIS OUT
+
+> Here are further remarks that happened during discussion, needed to be sorted out:
+> 
+> * What can we show to the user to show that their model of who they’re talking to aligns with who they are actually talking to. 
+> * Visual indicators for known, connected (i.e. friend of a friend) and unknown entities.
+> * Integrity (who we think we’re talking to is who we are talking to), corroboration (?). 
+> * Handling username changes < from a linking perspective, 
+> * User interface collisions 
+> * Adapt the interface as users learn, or demonstrate their understanding. (First interactions prompt confirmation, once the users know they don’t receive prompt.)
+
 ## Conclusion
 ## Glossary
 
