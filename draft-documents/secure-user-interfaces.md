@@ -54,7 +54,7 @@ We will examine the current behavior of the interface with a critical eye for se
 
 What we are not trying to do is to criticize Mastodon for having a particularly "bad" interface.
 In a sense the opposite is the case; Mastodon's web UI was chosen because it is clear that the developers have given great care that users are given a pleasant and comfortable experience.
-The issues and concerns are pervasive throughout contemporary interfaces as a whole;
+The issues and concerns we raise are pervasive throughout contemporary interfaces as a whole;
 we do not blame Mastodon's developers for the current behavior since the concept of security as being a first-order principle in user interface design is not broadly acknowledged.
 We do, however, hope that this paper will be able to contribute somewhat towards changing that state of affairs.
 
