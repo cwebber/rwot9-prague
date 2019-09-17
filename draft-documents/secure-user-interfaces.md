@@ -51,9 +51,6 @@ We counter that building a secure user interface necessarily requires that safet
 
 Due to the centrality that it plays in solving the issues of naming, readers are encouraged to read up on [petnames](https://github.com/cwebber/rebooting-the-web-of-trust-spring2018/blob/petnames/draft-documents/making-dids-invisible-with-petnames.md) as a prerequisite to continuing with this paper.
 
-<a id="fn.one-click" href="#fnr.one-click"><sub>[fn:not-one-click]</sub></a>
-See also [Not One Click for Security](https://www.hpl.hp.com/techreports/2009/HPL-2009-53.html).
-
 ## User flows by comparison
 
 We have decided to perform this study by starting with a well known interface to decentralized social media software, [Mastodon](https://joinmastodon.org/)'s default web interface.
@@ -83,3 +80,9 @@ We do, however, hope that this paper will be able to contribute somewhat towards
 ### New principles
 ## Conclusion
 ## Glossary
+
+## Footnotes
+
+<a id="fn.one-click" href="#fnr.one-click"><pre>[fn:not-one-click]</pre></a>
+See also [Not One Click for Security](https://www.hpl.hp.com/techreports/2009/HPL-2009-53.html).
+
