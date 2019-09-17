@@ -83,6 +83,6 @@ We do, however, hope that this paper will be able to contribute somewhat towards
 
 ## Footnotes
 
-<a id="fn.one-click" href="#fnr.one-click"><pre>[fn:not-one-click]</pre></a>
+<a id="fn.one-click" href="#fnr.one-click"><b>[fn:not-one-click]</b></a>
 See also [Not One Click for Security](https://www.hpl.hp.com/techreports/2009/HPL-2009-53.html).
 
