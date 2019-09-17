@@ -176,6 +176,11 @@ We do, however, hope that this paper will be able to contribute somewhat towards
 
 <!-- Phishing attack -->
 
+<!-- Phishing attack: if @emacsen=>tmarble sends a mail about ?mallet who wants to trick me into thinking it was about ?mark -->
+<!-- Gargron’s response: -->
+<!-- “The completion prioritizes people you follow. I personally remember display names more than usernames. A petname system would provide convenience in case of people who change their display name often for jokes, but I don't see what protections it would provide that prioritizing people you follow doesn't. It's not like you would define petnames for people you don't follow, would you?” https://mastodon.social/@Gargron/102730145345440621 -->
+
+
 ## Design patterns and principles
 ### Original design principles
 ### New principles
