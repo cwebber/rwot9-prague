@@ -18,8 +18,7 @@ Using a social messaging interface as a use case, we focus on the need to co-des
 
 ## Introduction
 
-  Interface: a surface regarded as the common boundary of two bodies, spaces, or phases. (dictionary.com https://www.dictionary.com/browse/interface)
-
+> Interface: a surface regarded as the common boundary of two bodies, spaces, or phases. ([from dictionary.com](https://www.dictionary.com/browse/interface))
 
 By enabling us humans to interact with our private and shared digital realities, user interfaces occupy a critical position in the information and communication systems our world depends on.
 We imagine the user interface as the surface between two informational realities: the digital space of the machine and its network, as well as the conceptual space of a human’s interior awareness.
