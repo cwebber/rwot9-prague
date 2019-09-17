@@ -66,10 +66,10 @@ We do, however, hope that this paper will be able to contribute somewhat towards
 
 > - Current behavior
 >   - Typing results in a completion suggestion box with people following by their proposed names
-> 
+>
 > - Changes
 >   - The suggested names are the names we’ve chosen for them (pet names). NOTE: not yet edge names
-> 
+>
 > - Accomplishment
 >   - Avoids risk of phishing by having one of our followers changed their proposed name to appear to be someone else.
 
@@ -77,12 +77,12 @@ We do, however, hope that this paper will be able to contribute somewhat towards
 
 > - Current behavior
 >   - In Mastodon messages are public by default (in the previous case the user would have shown a “world” icon and the user needs to click the “envelope” icon to make the message private.
-> 
+>
 > - Changes: maybe none!
->   - Consider changing default from private mode vs. public mode -- perhaps this could be made obvious by a change from light mode to dark mode. 
->   - NOTE: private by default is like e-mail (may start with To: box on top), public by default is like twitter (make it look like a tweet box).. 
+>   - Consider changing default from private mode vs. public mode -- perhaps this could be made obvious by a change from light mode to dark mode.
+>   - NOTE: private by default is like e-mail (may start with To: box on top), public by default is like twitter (make it look like a tweet box)..
 >   - NOTE: movies sometimes use different color balance to guide the viewer to understand when multiple timelines are interleaved.
-> 
+>
 > - Accomplishment
 >   - User should not be confused about if message composition is public or private.
 
@@ -90,13 +90,13 @@ We do, however, hope that this paper will be able to contribute somewhat towards
 
 > - Current behavior
 >   - User chooses their user address (“username”), proposed name and user avatar
-> 
+>
 > - Changes
 >   - In the future user address may be opaque (hidden from the user). For example self-authenticating-designators may be hidden.
 >   - NOTE: perhaps we want to encourage users to self host (and thus we may discuss setting up a node) < which increases the level of decentralization in the system.
 >   - There isn’t a need to make a distinction between a username and a proposed name; instead, a user only gives a proposed name.
 >   - The user may also give their proposed avatar, but the execution of this is a bit out of scope
-> 
+>
 > - Accomplishment
 >   - The rationale for removing user address is that 1) it is likely that in the future this will be a long, complicated string of characters [example: in the C language a pointer variable refers to a memory address, but we don’t care about the specific value of that memory address] and 2) We want to consciously move away from giving the user address importance (and specifically giving it real estate in the UI). NOTE: this will be hard for users because we are accustomed to giving importance to usernames and email addresses.
 
@@ -108,7 +108,7 @@ We do, however, hope that this paper will be able to contribute somewhat towards
 >   - View user avatar
 >   - View other info: toots, followers, following, proofs (e.g. keybase, DNS rel=me)
 >   - Show user content: toots, toots & replies, media. NOTE: may be helpful to confirm (or not) the identity of a user
-> 
+>
 > - Changes
 >   - Make user address opaque
 >   - Consider: show edge names for this person
@@ -117,7 +117,7 @@ We do, however, hope that this paper will be able to contribute somewhat towards
 >   - Merge with payment systems: leveraging my web of trust (social web, currency web often the same) Consider WeChat.
 >   - NOTE: when and edge name is created is it private by default? Should it have multiple levels of visibility (none, mutuals, followers, public). Perhaps a profile setting for default (e.g. mutuals) and the ability to control the visibility on a per followee basis.
 >   - NOTE: Mastodon private queue for user actions
-> 
+>
 > - Accomplishment
 >   - Phising resistent
 >   - Edge names help bootstrap relationships securely
@@ -127,12 +127,12 @@ We do, however, hope that this paper will be able to contribute somewhat towards
 
 > - Current behavior
 >   - Enter partial information: Mastodon shows a list of proposed matches (each with proposed name, user address and user avatar).
-> 
+>
 > - Changes
 >   - Each result will show pet names and user avatars (but not user addresses). Next results comprise matching edge names showing integrity and corroborations. NOTE: the edge name results should be shown differently visually such that it’s clear that they are edge names (e.g. using arrows, cwebber->emacsen).
 >   - NOTE: pet names and probably edge names sorted based on inertia (e.g. frequency of use, machine learning, etc.)
 >   - NOTE: consider the ability to search on edge names
-> 
+>
 > - Accomplishment
 >   - Avoided phishing attacks
 >   - Added a discoverability mechanism (find other contacts you may be interested in which may have confidence based on existing corroberation).
@@ -144,12 +144,12 @@ We do, however, hope that this paper will be able to contribute somewhat towards
 >   - There is a “follow” button in search results
 >   - Can paste a user address into the search bar (and then that user will be show as if a search result).
 >   - NOTE: it is possible to click on a user address in results to view the profile (presumably to add confidence prior to following… See Viewing Profile).
-> 
+>
 > - Changes
 >   - Add a plus icon (add user image) to aid discovering the add connection feature from the search bar.
 >   - This changes the interface to enable dragging and dropping (or copy and pasting) the encapsulated address, or the scanning of a QR code. User addresses encapsulated : presented as proposed names.
 >   - TODO: cwebber to define “encapsulated” (or alternate term)
-> 
+>
 > - Accomplishment
 >   - Freed from the assumption that user addresses are meaningful to the user experience on their own. And this opens a path to using self authenticating designators (saddness :) ).
 >   - Aiding discoverability of adding connections via search results
@@ -158,11 +158,11 @@ We do, however, hope that this paper will be able to contribute somewhat towards
 
 > - Current behavior
 >   - One must view one’s own profile and then click on followers to access contacts.
-> 
+>
 > - Changes
 >   - NOTE: An idea for a future change is to view our contacts as a visual graph.
 >   - As in Viewing Profile there is an opportunity to change the pet name for a contact.
-> 
+>
 > - Accomplishment
 >   - By adopting the other changes contact management will benefit.
 
@@ -172,7 +172,7 @@ We do, however, hope that this paper will be able to contribute somewhat towards
 >   - Shows user avatar, proposed name, user address and then the message.
 >   - The body of the message may contain references to users, shown as unqualified user address (a security information deficiency ).
 >   - Clicking on a user will bring up their profile
-> 
+>
 > - Changes
 >   - Either we do NOT show an avatar, or we show a pet avatar or an edge avatar (which we have not defined yet).
 >   - TODO: cwebber needs to define the above terms!
@@ -182,23 +182,23 @@ We do, however, hope that this paper will be able to contribute somewhat towards
 >     - edge names [with integrity and corroboration UX]
 >     - proposed names
 >       - Displayed in a distinct way, including numbering where necessary (1 through 9, with ellipsis for 9+) (e.g. “?” instead of “@”)
-> 
+>
 > - Accomplishment
 >   - No phishing via avatar (how this works comes later), nor via proposed name
 >   - Hiding user address (enabling sadness :) )
-> 
+>
 > Intuitive distinction between “level of integrity” between petnames vs edge names (and amount of corroboration) vs proposed names, edge names, proposed nmaing attack
-> 
+>
 > Phishing attack: if @emacsen=>tmarble sends a mail about ?mallet who wants to trick me into thinking it was about ?mark
-> 
+>
 > Gargron’s response:
-> 
+>
 > “The completion prioritizes people you follow. I personally remember display names more than usernames. A petname system would provide convenience in case of people who change their display name often for jokes, but I don't see what protections it would provide that prioritizing people you follow doesn't. It's not like you would define petnames for people you don't follow, would you?” https://mastodon.social/@Gargron/102730145345440621
 
 ## Don't pretend we can prevent what we cannot
 
 > Two violations:
-> 
+>
 > - federating blocks
 > - "forcing" a delete across the network
 
@@ -210,83 +210,83 @@ We do, however, hope that this paper will be able to contribute somewhat towards
 
 For now we leave it with the 10 principles mentioned in the Ka-Ping Yee’s seminal paper on secure UI criteria https://www2.eecs.berkeley.edu/Pubs/TechRpts/2002/CSD-02-1184.pdf
 
-- **Path of Least Resistance:** To the greatest extent possible, the natural way to do any task should also be the secure way. 
-- **Appropriate Bounds:** The interface should expose, and the system should enforce, distinctions between objects and between actions along boundaries[f] that matter to the user. 
-- **Explicit Authority:** A user’s authorities must only be provided to other actors as a result of an explicit action that is understood by the user to imply granting. 
-- **Visibility:** The interface should allow the user to easily review any active authority relationships that would affect security-relevant decisions. 
-- **Revocability:** The interface should allow the user to easily revoke authorities that the user has granted wherever revocation is possible. 
-- **Expected Ability:** The interface must not generate the impression that it is possible to do something that cannot actually be done. 
-- **Trusted Path:** The interface must provide an unspoofable and faithful communication channel between the user and any entity trusted to manipulate authorities on the user’s behalf. 
-- **Identifiability:** The interface should enforce that distinct objects and distinct actions have unspoofably identifiable and distinguishable representations. 
-- **Expressiveness:** The interface should provide enough expressive power (a) to describe a safe security policy without undue difficulty; and (b) to allow users to express security policies in terms that fit their goals. 
-- **Clarity:** The effect of any security-relevant action must be clearly apparent to the user before the action is taken. 
+- **Path of Least Resistance:** To the greatest extent possible, the natural way to do any task should also be the secure way.
+- **Appropriate Bounds:** The interface should expose, and the system should enforce, distinctions between objects and between actions along boundaries[f] that matter to the user.
+- **Explicit Authority:** A user’s authorities must only be provided to other actors as a result of an explicit action that is understood by the user to imply granting.
+- **Visibility:** The interface should allow the user to easily review any active authority relationships that would affect security-relevant decisions.
+- **Revocability:** The interface should allow the user to easily revoke authorities that the user has granted wherever revocation is possible.
+- **Expected Ability:** The interface must not generate the impression that it is possible to do something that cannot actually be done.
+- **Trusted Path:** The interface must provide an unspoofable and faithful communication channel between the user and any entity trusted to manipulate authorities on the user’s behalf.
+- **Identifiability:** The interface should enforce that distinct objects and distinct actions have unspoofably identifiable and distinguishable representations.
+- **Expressiveness:** The interface should provide enough expressive power (a) to describe a safe security policy without undue difficulty; and (b) to allow users to express security policies in terms that fit their goals.
+- **Clarity:** The effect of any security-relevant action must be clearly apparent to the user before the action is taken.
 
 ### TODO: New principles
 
 > Fundamental Tradeoff:
-> 
+>
 > **TODO:** Add the tradeoff curve image
-> 
+>
 > The blue arrow is reflects the “optimal direction of progress” while using the system[c]. We want to understand a “secure user interface” as an education path towards more secure user behaviour. We also want to ensure that risky choices (“advanced features”) are fully made aware of.
-> 
+>
 > We split principles into PASSIVE (reading) and ACTIVE (writing or posting) UI principles
-> 
+>
 > - The capacity to understand the meaning of what’s displayed is the pre-condition to meaningfully cause desired action by writing. In most cases, mental models for writing (active) are formed AFTER models for reading (passive) are considered to be established.
 > - Which means: we want clear indicating between read vs write modes (with even more clear indication when its public vs private write)
 > - Example of modern mode-change between[d] passive/active: the pencil in github direct edit - it switches between rendered representation VS markdown source. In this case a private write?
-> 
+>
 > Which brings us to a terminology proposal for 3 contexts that we want help distinguish in UIs of “online social network”:
-> 
+>
 > 1. Personally Private
 > 2. Socially Private (within groups)
 > 3. Public
-> 
+>
 > The history free appearance of the UI is not adequate to know how to interpret it - you have to know something about the system. That is the “Inverse” of the hover UI element - you also have to history free appearance - so you are depend as little as possible to the history of how you got here..
-> 
+>
 > Indication of “trustability” of people represented in the interface (via petnames, edgenames, etc.)
-> 
+>
 > Surface simplicity, with access to complexity for the users that want it.
-> 
+>
 > Preventing phishing attacks, and conveying that in the design.
-> 
+>
 > Recognizing divergence of a user’s mental model of interface functionality with designed model. Strive to ensure that these divergences fail harmlessly, and correct user’s model.
 
 #### Always strive for clear representation of context boundaries
 
 > This one is related to the principle of “Appropriate Bounds” from Ka-Ping Yee’s seminal paper.
-> 
-> 
+>
+>
 > Simple example: “Picture-in-Picture Attack”
-> 
-> 
+>
+>
 > An attacker generates an image which contains a complex mockup of UI elements with the aim to be visually indistinguishable from actual UI elements as used by the victims viewing application.
-> 
-> 
+>
+>
 > This attack works whenever the visual representation of the boundary between these two contexts is missing:
-> 
-> 
+>
+>
 > 1. “All characters/symbols in this area are rendered by local (the victims) system” - a.k.a.: “what I am seeing are actual UI elements - they are drawn by the viewer application”
 > 2. “All characters/symbols in this area are rendered by remote (the attackers) system” - a.k.a.: “what I am seeing in this area is a reproduction that was rendered in a completely different context than my viewing application”
-> 
-> 
+>
+>
 > So, if a post contains a picture and that picture is NOT marked explicitly marked as “context B” in the viewer - the mental model divergence may always happen, such that: “this is context B within context A” is mistaken for “everything here is the same context A”.
-> 
-> 
-> Another example that is particularly relevant for federated systems: by using centrally managed namespaces for the past decades (e.g. the collision free namespace of twitter handles) mental models have been established within us that may cause a divergence from the actual structure of the federated system at hand. In other words: we are not used to  
-> 
-> 
+>
+>
+> Another example that is particularly relevant for federated systems: by using centrally managed namespaces for the past decades (e.g. the collision free namespace of twitter handles) mental models have been established within us that may cause a divergence from the actual structure of the federated system at hand. In other words: we are not used to
+>
+>
 > context of namespaces
-> 
+>
 > “legacy mental model” is the starting point for many when they start to use a federated system.
 
 #### Inertia - prefer the familiar
 
 > Two different emphasis:
-> 
+>
 > * Intuitions before people come in. (examples: distinguish between sending public/private by making public sending look “twitter-like” and private sending “email-like”) Ensure users know when they are performing a public write action instead of a private write.
 > * Inertia: once you had interaction with system. At a later time it should bias in favor of continuity. Those fit better with memory. Example: two different pathways in a history free way.
-> 
-> 
+>
+>
 > Also important: clearly highlight when something NEW (with key difference in consequences, relative to the OLD) is about to be triggered.
 
 #### When introducing new namespaces (eg petnames, or localnames) tie it to the mental model of familiar namespaces, e.g “contacts list”
@@ -316,12 +316,12 @@ For now we leave it with the 10 principles mentioned in the Ka-Ping Yee’s semi
 #### Further remarks: SORT THIS OUT
 
 > Here are further remarks that happened during discussion, needed to be sorted out:
-> 
-> * What can we show to the user to show that their model of who they’re talking to aligns with who they are actually talking to. 
+>
+> * What can we show to the user to show that their model of who they’re talking to aligns with who they are actually talking to.
 > * Visual indicators for known, connected (i.e. friend of a friend) and unknown entities.
-> * Integrity (who we think we’re talking to is who we are talking to), corroboration (?). 
-> * Handling username changes < from a linking perspective, 
-> * User interface collisions 
+> * Integrity (who we think we’re talking to is who we are talking to), corroboration (?).
+> * Handling username changes < from a linking perspective,
+> * User interface collisions
 > * Adapt the interface as users learn, or demonstrate their understanding. (First interactions prompt confirmation, once the users know they don’t receive prompt.)
 
 ## Conclusion
@@ -342,3 +342,29 @@ NOTE: This glossary is intended to clarify terms used in this paper. These terms
 <a id="fn.one-click" href="#fnr.one-click"><b>[fn:not-one-click]</b></a>
 See also [Not One Click for Security](https://www.hpl.hp.com/techreports/2009/HPL-2009-53.html).
 
+---
+
+# RAW assets
+
+These may be incorporated directly or possibly chopped up and/or replaced with
+artist renderings.
+
+## functionality-v-safety.jpg
+
+![functionality-v-safety.jpg](secure-user-interfaces-assets/functionality-v-safety.jpg)
+
+## whiteboard.jpg
+
+![whiteboard.jpg](secure-user-interfaces-assets/whiteboard.jpg)
+
+## whiteboard2.jpg
+
+![whiteboard2.jpg](secure-user-interfaces-assets/whiteboard2.jpg)
+
+## whiteboard3.jpg
+
+![whiteboard3.jpg](secure-user-interfaces-assets/whiteboard3.jpg)
+
+## whiteboard4.jpg
+
+![whiteboard4.jpg](secure-user-interfaces-assets/whiteboard4.jpg)
