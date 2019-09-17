@@ -22,8 +22,8 @@ Using a social messaging interface as a use case, we focus on the need to co-des
 
 By enabling us humans to interact with our private and shared digital realities, user interfaces occupy a critical position in the information and communication systems our world depends on.
 We imagine the user interface as the surface between two informational realities: the digital space of the machine and its network, as well as the conceptual space of a human’s interior awareness.
-The user interface is the means by which our interior thoughts can be recorded privately, and broadcasted publicly.
-In an era of electronic communication, it has become an organ, for both storing memories and projecting our voice.
+The user interface is the means by which our interior thoughts can be recorded privately and broadcasted publicly.
+In an era of electronic communication it has become an organ for both storing memories and projecting our voice.
 
 <!-- (Reference suggestion: Marshall Mcluhans Understanding Media: The Extensions of Man https://en.wikipedia.org/wiki/Understanding_Media) -->
 
