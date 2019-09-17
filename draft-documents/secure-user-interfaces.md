@@ -303,7 +303,17 @@ For now we leave it with the 10 principles mentioned in the Ka-Ping Yee’s semi
 > * Adapt the interface as users learn, or demonstrate their understanding. (First interactions prompt confirmation, once the users know they don’t receive prompt.)
 
 ## Conclusion
+
 ## Glossary
+
+NOTE: This glossary is intended to clarify terms used in this paper. These terms may likely not be exposed to a user as part of a secure user interface.
+
+- **pet name:** The name a user chooses for another user.
+- **edge name:** A reference to another user’s published pet name. For example Alice has a pet name “bobby” for Bob, and Bob has a pet name “bff” for Carol. Thus Alice may refer to Carol via the edge name bobby->bff.
+- **naming hub:** A naming hub is a source of a name binding. A user is a naming hub for their pet names. Another possible naming hub is the Domain Name System.
+- **proposed name:** A name that a user has chosen for themselves (TODO: self-proposed name?  Because non-self proposed-names could actually cover "intro names" from the petnames paper)  (**NOTE:** proposed names have no guarantees about being unique (e.g. there could be many ?gargron users))
+- **user address:** The machine readable (not necessarily human readable) address for a user. In Mastodon the user address is called a “webfinger address”.
+- **user avatar:** The image or graphic that a user has chosen for their profile.
 
 ## Footnotes
 
