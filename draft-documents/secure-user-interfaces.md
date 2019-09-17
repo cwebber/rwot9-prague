@@ -41,8 +41,10 @@ Most interactions through a program thus become routine; the user is not very ac
 There will always be some degree of misalignment between the user's intuition and the behavior embodied by its interface; such moments open up a user to vulnerability.
 It is our goal that when this misalignment occurs that the behavior of the program "fails safe".
 
-The focus of our study will be on decentralized social networks.
-The crux of such a secure system surrounds identity and the naming of users, for when naming is misunderstood, users may communicate, exchange money, or perform other actions with users whom they did not intend.
+The focus of our study will be on building secure, decentralized social networks.
+However, we believe that the lessons from examining social networks can be extrapolated to nearly all user interface programs.
+
+The crux of such a secure communication system surrounds identity and the naming of users, for when naming is misunderstood, users may communicate, exchange money, or perform other actions with users whom they did not intend.
 The consequences of getting this wrong range from a violation of privacy to (as communication systems are increasingly interwoven with payment mechanisms) being tricked out of one's money.
 Due to the centrality that it plays in solving the issues of naming, readers are encouraged to read up on [petnames](https://github.com/cwebber/rebooting-the-web-of-trust-spring2018/blob/petnames/draft-documents/making-dids-invisible-with-petnames.md) as a prerequisite to continuing with this paper.
 
