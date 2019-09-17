@@ -47,11 +47,12 @@ The crux of such a secure communication system surrounds identity and the naming
 The consequences of getting this wrong range from a violation of privacy to (as communication systems are increasingly interwoven with payment mechanisms) being tricked out of one's money.
 Our assertion is that by and large, user interfaces today (particularly in the examples of social systems) *do not* "fail safe".
 The general perception is that building security into user interfaces necessarily requires inconveniencing users.
-We counter that building a secure user interface necessarily requires that safety be part of the default, comfortable, intuitive user experience that users expect and demand.<a href="#fn.one-click">[fn:not-one-click]</a>
+We counter that building a secure user interface necessarily requires that safety be part of the default, comfortable, intuitive user experience that users expect and demand.<a href="#fn.one-click" id="fnr.one-click">[fn:not-one-click]</a>
 
 Due to the centrality that it plays in solving the issues of naming, readers are encouraged to read up on [petnames](https://github.com/cwebber/rebooting-the-web-of-trust-spring2018/blob/petnames/draft-documents/making-dids-invisible-with-petnames.md) as a prerequisite to continuing with this paper.
 
-<p id="fn.one-click">See also [Not One Click for Security](https://www.hpl.hp.com/techreports/2009/HPL-2009-53.html).</p>
+<a id="fn.one-click" href="#fnr.one-click"><sub>[fn:not-one-click]</sub></a>
+See also [Not One Click for Security](https://www.hpl.hp.com/techreports/2009/HPL-2009-53.html).
 
 ## User flows by comparison
 
