@@ -63,13 +63,114 @@ we do not blame Mastodon's developers for the current behavior since the concept
 We do, however, hope that this paper will be able to contribute somewhat towards changing that state of affairs.
 
 ### Composing a private message
+
+<!-- * Current behavior -->
+<!--    * Typing results in a completion suggestion box with people I’m following by their proposed names -->
+<!-- * Changes -->
+<!--    * The suggested names are the names we’ve chosen for them (pet names). NOTE: not yet edge names -->
+<!-- * Accomplishment -->
+<!--    * Avoids risk of phishing by having one of our followers changed their proposed name to appear to be someone else. -->
+
 ### Composing public vs private messages
+
+<!-- * Current behavior -->
+<!--    * In Mastodon messages are public by default (in the previous case the user would have shown a “world” icon and the user needs to click the “envelope” icon to make the message private. -->
+<!-- * Changes: maybe none! -->
+<!--    * Consider changing default from private mode vs. public mode -- perhaps this could be made obvious by a change from light mode to dark mode.  -->
+<!--    * NOTE: private by default is like e-mail (may start with To: box on top), public by default is like twitter (make it look like a tweet box)..  -->
+<!--    * NOTE: movies sometimes use different color balance to guide the viewer to understand when multiple timelines are interleaved. -->
+<!-- * Accomplishment -->
+<!--    * User should not be confused about if message composition is public or private. -->
+
 ### Onboarding new users
+
+<!-- * Current behavior -->
+<!--    * User chooses their user address (“username”), proposed name and user avatar -->
+<!-- * Changes -->
+<!--    * In the future user address may be opaque (hidden from the user). For example self-authenticating-designators may be hidden. -->
+<!--    * NOTE: perhaps we want to encourage users to self host (and thus we may discuss setting up a node) < which increases the level of decentralization in the system. -->
+<!--    * There isn’t a need to make a distinction between a username and a proposed name; instead, a user only gives a proposed name. -->
+<!--    * The user may also give their proposed avatar, but the execution of this is a bit out of scope -->
+<!-- * Accomplishment -->
+<!--    * The rationale for removing user address is that 1) it is likely that in the future this will be a long, complicated string of characters [example: in the C language a pointer variable refers to a memory address, but we don’t care about the specific value of that memory address] and 2) We want to consciously move away from giving the user address importance (and specifically giving it real estate in the UI). NOTE: this will be hard for users because we are accustomed to giving importance to usernames and email addresses. -->
+
 ### Viewing profile
+
+<!-- * Current behavior -->
+<!--    * View proposed name -->
+<!--    * View user address (“username”) -->
+<!--    * View user avatar -->
+<!--    * View other info: toots, followers, following, proofs (e.g. keybase, DNS rel=me) -->
+<!--    * Show user content: toots, toots & replies, media. NOTE: may be helpful to confirm (or not) the identity of a user -->
+<!-- * Changes -->
+<!--    * Make user address opaque -->
+<!--    * Consider: show edge names for this person -->
+<!--    * Follow: propose a pet name, prompt for an edge name (may have a suggested one: proposed one or uncorroborated edge name or corroborated edge name). NOTE: concern about prioritizing edge names over proposed names. One one hand proposed names could be used for phishing, on the other hand the proposed name may change due to marital status while the edge names would propagate the outdated name. Thus the user should probably see both (and make the choice). -->
+<!--    * Not follow: propose a pet name, provide option to add a pet name (think badgargron). -->
+<!--    * Merge with payment systems: leveraging my web of trust (social web, currency web often the same) Consider WeChat. -->
+<!--    * NOTE: when and edge name is created is it private by default? Should it have multiple levels of visibility (none, mutuals, followers, public). Perhaps a profile setting for default (e.g. mutuals) and the ability to control the visibility on a per followee basis. -->
+<!--    * NOTE: Mastodon private queue for user actions -->
+<!-- * Accomplishment -->
+<!--    * Phising resistent -->
+<!--    * Edge names help bootstrap relationships securely -->
+<!--    * We’ve opened ourselves up to sadness - using SADs (self authenticating designators) -->
+
 ### Searching for users
+
+<!-- * Current behavior -->
+<!--    * Enter partial information: Mastodon shows a list of proposed matches (each with proposed name, user address and user avatar). -->
+<!-- * Changes -->
+<!--    * Each result will show pet names and user avatars (but not user addresses). Next results comprise matching edge names showing integrity and corroborations. NOTE: the edge name results should be shown differently visually such that it’s clear that they are edge names (e.g. using arrows, cwebber->emacsen). -->
+<!--    * NOTE: pet names and probably edge names sorted based on inertia (e.g. frequency of use, machine learning, etc.) -->
+<!--    * NOTE: consider the ability to search on edge names -->
+<!-- * Accomplishment -->
+<!--    * Avoided phishing attacks -->
+<!--    * Added a discoverability mechanism (find other contacts you may be interested in which may have confidence based on existing corroberation). -->
+<!--    * NOTE: Inertia would increase search result relevance and quality of user experience. -->
+
 ### Adding connections
+
+<!-- * Current behavior -->
+<!--    * There is a “follow” button in search results -->
+<!--    * Can paste a user address into the search bar (and then that user will be show as if a search result). -->
+<!--    * NOTE: it is possible to click on a user address in results to view the profile (presumably to add confidence prior to following… See Viewing Profile). -->
+<!-- * Changes -->
+<!--    * Add a plus icon (add user image) to aid discovering the add connection feature from the search bar. -->
+<!--    * This changes the interface to enable dragging and dropping (or copy and pasting) the encapsulated address, or the scanning of a QR code. User addresses encapsulated : presented as proposed names. -->
+<!--    * TODO: cwebber to define “encapsulated” (or alternate term) -->
+<!-- * Accomplishment -->
+<!--    * Freed from the assumption that user addresses are meaningful to the user experience on their own. And this opens a path to using self authenticating designators (saddness :) ). -->
+<!--    * Aiding discoverability of adding connections via search results -->
+
 ### Contact management
+
+<!-- * Current behavior -->
+<!--    * One must view one’s own profile and then click on followers to access contacts. -->
+<!-- * Changes -->
+<!--    * NOTE: An idea for a future change is to view our contacts as a visual graph. -->
+<!--    * As in Viewing Profile there is an opportunity to change the pet name for a contact. -->
+<!-- * Accomplishment -->
+<!--    * By adopting the other changes contact management will benefit. -->
+
 ### Receiving message
+
+<!-- * Current behavior -->
+<!--    * Shows user avatar, proposed name, user address and then the message. -->
+<!--    * The body of the message may contain references to users, shown as unqualified user address (a security information deficiency ). -->
+<!--    * Clicking on a user will bring up their profile -->
+<!-- * Changes -->
+<!--    * Either we do NOT show an avatar, or we show a pet avatar or an edge avatar (which we have not defined yet). -->
+<!--    * TODO: cwebber needs to define the above terms! -->
+<!--    * Shows the pet name and the message. -->
+<!--    * The body of the message is shown with users (that are our conte rendered the best way possible: -->
+<!--       * pet names -->
+<!--       * edge names [with integrity and corroboration UX] -->
+<!--       * proposed names -->
+<!--          * Displayed in a distinct way, including numbering where necessary (1 through 9, with ellipsis for 9+) (e.g. “?” instead of “@”) -->
+<!-- * Accomplishment -->
+<!--    * No phishing via avatar (how this works comes later), nor via proposed name -->
+<!--    * Hiding user address (enabling sadness :) ) -->
+<!--    * Intuitive distinction between “level of integrity” between petnames vs edge names (and amount of corroboration) vs proposed names -->
 
 <!-- Petnames, edge names, proposed names -->
 
