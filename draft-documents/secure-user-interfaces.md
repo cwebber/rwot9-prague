@@ -180,6 +180,13 @@ We do, however, hope that this paper will be able to contribute somewhat towards
 <!-- Gargron’s response: -->
 <!-- “The completion prioritizes people you follow. I personally remember display names more than usernames. A petname system would provide convenience in case of people who change their display name often for jokes, but I don't see what protections it would provide that prioritizing people you follow doesn't. It's not like you would define petnames for people you don't follow, would you?” https://mastodon.social/@Gargron/102730145345440621 -->
 
+## Don't pretend we can prevent what we cannot
+
+Two violations:
+
+- federating blocks
+- "forcing" a delete across the network
+
 ## Design patterns and principles
 
 <!-- TODO: Introduce the concept of the ‘System Image’ and the ‘User Model’ to help frame the 10 principles and the rest of the paper. -->
