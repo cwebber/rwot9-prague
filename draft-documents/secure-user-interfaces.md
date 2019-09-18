@@ -67,7 +67,7 @@ We do, however, hope that this paper will be able to contribute somewhat towards
 > - Current behavior
 >   - Typing results in a completion suggestion box with people following by their proposed names
 
-![Attempting to address a user in when composing a public message in Mastodon](secure-user-interfaces-assets/mastodon-public-address-tom.png)
+![Attempting to address Tom Marble in when composing a public message in Mastodon](secure-user-interfaces-assets/mastodon-public-address-tom.png)
 
 Here we see the user of this interface (whom we will call "cwebber" for the sake of these examples) sending a public message where another user is mentioned.
 By typing the `@` symbol, cwebber has indicated that they would like to start mentioning them.
@@ -78,22 +78,22 @@ Before this Tom appear several users that cwebber has not even subscribed to, ev
 Is this the right user that cwebber thinks of?
 It could be worse if another user chose to switch to the username "Tom Marble" and use Tom's avatar.
 
-![Attempting to address a user in when composing a public message in Mastodon](secure-user-interfaces-assets/mastodon-public-address-lain.png)
+![Attempting to address Gargron in when composing a public message in Mastodon](secure-user-interfaces-assets/mastodon-public-address-gargron.png)
 
-This situation can get even worse with users who change their avatar and display names frequently.
-Here cwebber is attempting to address the entity they think of as "lain", but several
-possible "lain"s show up on the list.
-The user cwebber is thinking of is the second in the list.
-Confusingly, this user has recently changed their avatar and even their display name to something that has nothing to do with "lain" at all, even though lain is still found in their username.
-It is difficult for cwebber to be sure they are addressing the right person.
-
+Here cwebber is attempting to address the person they think of as "Gargron".
+But which Gargron is the Gargron that cwebber thinks of as Gargron?
 Even if the UI had sorted according to who a user follows first, this is still open quite easily to attack.
-If Tom Marble knew that cwebber would like to message Lain, Tom Marble could change their display name and avatar to be the same as Lain's and trick cwebber into selecting them instead.
+If Tom Marble knew that cwebber would like to message Gargron, Tom Marble could change their display name and avatar to be the same as Gargron's and trick cwebber into selecting them instead.
 (This is annoying enough now, but will become more serious as we introduce private messages.)
 
 > - Changes
 >   - The suggested names are the names we’ve chosen for them (pet names). NOTE: not yet edge names
->
+
+**TODO:** Add revised UI.
+
+In our revised interface, we have preserved the behavior of typing the `@` symbol to indicate beginning to mention another user.
+However, the possible completions are limited to "petnames" that cwebber has manually chosen in their interface.
+
 > - Accomplishment
 >   - Avoids risk of phishing by having one of our followers changed their proposed name to appear to be someone else.
 
