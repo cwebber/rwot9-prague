@@ -87,6 +87,10 @@ The user cwebber is thinking of is the second in the list.
 Confusingly, this user has recently changed their avatar and even their display name to something that has nothing to do with "lain" at all, even though lain is still found in their username.
 It is difficult for cwebber to be sure they are addressing the right person.
 
+Even if the UI had sorted according to who a user follows first, this is still open quite easily to attack.
+If Tom Marble knew that cwebber would like to message Lain, Tom Marble could change their display name and avatar to be the same as Lain's and trick cwebber into selecting them instead.
+(This is annoying enough now, but will become more serious as we introduce private messages.)
+
 > - Changes
 >   - The suggested names are the names we’ve chosen for them (pet names). NOTE: not yet edge names
 >
