@@ -62,11 +62,31 @@ The issues and concerns we raise are pervasive throughout contemporary interface
 we do not blame Mastodon's developers for the current behavior since the concept of security as being a first-order principle in user interface design is not broadly acknowledged.
 We do, however, hope that this paper will be able to contribute somewhat towards changing that state of affairs.
 
-### Composing a private message
+### Composing a public message
 
 > - Current behavior
 >   - Typing results in a completion suggestion box with people following by their proposed names
->
+
+![Attempting to address a user in when composing a public message in Mastodon](secure-user-interfaces-assets/mastodon-public-address-tom.png)
+
+Here we see the user of this interface (whom we will call "cwebber" for the sake of these examples) sending a public message where another user is mentioned.
+By typing the `@` symbol, cwebber has indicated that they would like to start mentioning them.
+Having typed `tom`, the interface tries suggesting auto-competions for potential addressees.
+The ordering is somewhat difficult to understand, but cwebber would like to address the user known as Tom Marble.
+(We were told by Mastodon's developers that users which you subscribe to appear earlier on your completions, however Tom Marble appears towards the bottom of the list; perhaps this is a bug.)
+Before this Tom appear several users that cwebber has not even subscribed to, even though cwebber did subscribe to Tom Marble.
+Is this the right user that cwebber thinks of?
+It could be worse if another user chose to switch to the username "Tom Marble" and use Tom's avatar.
+
+![Attempting to address a user in when composing a public message in Mastodon](secure-user-interfaces-assets/mastodon-public-address-lain.png)
+
+This situation can get even worse with users who change their avatar and display names frequently.
+Here cwebber is attempting to address the entity they think of as "lain", but several
+possible "lain"s show up on the list.
+The user cwebber is thinking of is the second in the list.
+Confusingly, this user has recently changed their avatar and even their display name to something that has nothing to do with "lain" at all, even though lain is still found in their username.
+It is difficult for cwebber to be sure they are addressing the right person.
+
 > - Changes
 >   - The suggested names are the names we’ve chosen for them (pet names). NOTE: not yet edge names
 >
