@@ -51,6 +51,11 @@ We counter that building a secure user interface necessarily requires that safet
 
 Due to the centrality that it plays in solving the issues of naming, readers are encouraged to read up on [petnames](https://github.com/cwebber/rebooting-the-web-of-trust-spring2018/blob/petnames/draft-documents/making-dids-invisible-with-petnames.md) as a prerequisite to continuing with this paper.
 
+## Requirements
+We explore the requirements of a user interface that conveys the security of the system to users in an intuitive way, with an emphasis on inclusive design.
+
+*TODO: Accept the requirements here and describe them.*
+
 ## User flows by comparison
 
 We have decided to perform this analysis by starting with a well known interface to decentralized social media software, [Mastodon](https://joinmastodon.org/)'s default web interface.
