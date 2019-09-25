@@ -171,6 +171,14 @@ We have also avoided some cases where discussing another user privately unintent
 
 ### Onboarding new users
 
+<img alt="onboarding1.jpg" src="secure-user-interfaces-assets/onboarding1.jpg" width="50%" height="50%">
+
+<img alt="onboarding2.jpg" src="secure-user-interfaces-assets/onboarding2.jpg" width="50%" height="50%">
+
+<img alt="onboarding3.jpg" src="secure-user-interfaces-assets/onboarding3.jpg" width="50%" height="50%">
+
+<img alt="onboarding4.jpg" src="secure-user-interfaces-assets/onboarding4.jpg" width="50%" height="50%">
+
 > - Current behavior
 >   - User chooses their user address (“username”), proposed name and user avatar
 >
@@ -184,6 +192,8 @@ We have also avoided some cases where discussing another user privately unintent
 >   - The rationale for removing user address is that 1) it is likely that in the future this will be a long, complicated string of characters [example: in the C language a pointer variable refers to a memory address, but we don’t care about the specific value of that memory address] and 2) We want to consciously move away from giving the user address importance (and specifically giving it real estate in the UI). NOTE: this will be hard for users because we are accustomed to giving importance to usernames and email addresses.
 
 ### Viewing profile
+
+<img alt="view-profile-b-slade.jpg" src="secure-user-interfaces-assets/view-profile-b-slade.jpg" width="50%" height="50%">
 
 > - Current behavior
 >   - View proposed name
@@ -207,6 +217,8 @@ We have also avoided some cases where discussing another user privately unintent
 >   - We’ve opened ourselves up to sadness - using SADs (self authenticating designators)
 
 ### Searching for users
+
+<img alt="searching-for-users.jpg" src="secure-user-interfaces-assets/searching-for-users.jpg" width="50%" height="50%">
 
 > - Current behavior
 >   - Enter partial information: Mastodon shows a list of proposed matches (each with proposed name, user address and user avatar).
@@ -239,6 +251,8 @@ We have also avoided some cases where discussing another user privately unintent
 
 ### Contact management
 
+<img alt="contact-management.jpg" src="secure-user-interfaces-assets/contact-management.jpg" width="50%" height="50%">
+
 > - Current behavior
 >   - One must view one’s own profile and then click on followers to access contacts.
 >
@@ -250,6 +264,8 @@ We have also avoided some cases where discussing another user privately unintent
 >   - By adopting the other changes contact management will benefit.
 
 ### Receiving message
+
+<img alt="receiving-message.jpg" src="secure-user-interfaces-assets/receiving-message.jpg" width="50%" height="50%">
 
 > - Current behavior
 >   - Shows user avatar, proposed name, user address and then the message.
@@ -308,6 +324,8 @@ For now we leave it with the 10 principles mentioned in the Ka-Ping Yee’s semi
 - **Clarity:** The effect of any security-relevant action must be clearly apparent to the user before the action is taken.
 
 ### TODO: New principles
+
+<img alt="functionality-v-safety.jpg" src="secure-user-interfaces-assets/functionality-v-safety.jpg" width="50%" height="50%">
 
 > Fundamental Tradeoff:
 >
@@ -434,10 +452,6 @@ See also [Not One Click for Security](https://www.hpl.hp.com/techreports/2009/HP
 
 These may be incorporated directly or possibly chopped up and/or replaced with
 artist renderings.
-
-## functionality-v-safety.jpg
-
-![functionality-v-safety.jpg](secure-user-interfaces-assets/functionality-v-safety.jpg)
 
 ## whiteboard.jpg
 
