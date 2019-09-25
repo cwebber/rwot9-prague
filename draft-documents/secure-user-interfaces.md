@@ -69,6 +69,8 @@ We do, however, hope that this paper will be able to contribute somewhat towards
 
 ### Composing a public message
 
+#### Current behavior
+
 > - Current behavior
 >   - Typing results in a completion suggestion box with people following by their proposed names
 
@@ -81,6 +83,7 @@ The ordering is somewhat difficult to understand, but cwebber would like to addr
 (We were told by Mastodon's developers that users which you subscribe to appear earlier on your completions, however Tom Marble appears towards the bottom of the list; perhaps this is a bug.)
 Before this Tom appear several users that cwebber has not even subscribed to, even though cwebber did subscribe to Tom Marble.
 Is this the right user that cwebber thinks of?
+
 It could be worse if another user chose to switch to the username "Tom Marble" and use Tom's avatar.
 
 ![Attempting to address a user in when composing a public message in Mastodon](secure-user-interfaces-assets/mastodon-public-address-lain.png)
@@ -96,24 +99,75 @@ Even if the UI had sorted according to who a user follows first, this is still o
 If Tom Marble knew that cwebber would like to message Lain, Tom Marble could change their display name and avatar to be the same as Lain's and trick cwebber into selecting them instead.
 (This is annoying enough now, but will become more serious as we introduce private messages.)
 
+#### Proposed changes
+
 > - Changes
 >   - The suggested names are the names we’ve chosen for them (pet names). NOTE: not yet edge names
->
+
+**TODO:** Insert mockup here
+
+In our proposed changes, we preserve the behavior of beginning to mention another entity with the `@` symbol.
+The key difference is that in our interface, the returned results are matches against [petnames](https://github.com/cwebber/rebooting-the-web-of-trust-spring2018/blob/petnames/draft-documents/making-dids-invisible-with-petnames.md) that the user of the interface has explicitly chosen to represent other entities in the system.
+For instance, in the above screenshot, cwebber sees "Tom Marble" and "Tom Webber".
+Since these are the petnames that cwebber has chosen for these entities, they reflect the people that cwebber thinks of as "Tom Marble" and "Tom Webber" respectively.
+
+#### What we have accomplished
+
 > - Accomplishment
 >   - Avoids risk of phishing by having one of our followers changed their proposed name to appear to be someone else.
 
+By switching to a petname system, we have helped interface users select the correct identities, avoiding phishing attacks.
+We also help users remember who is whom more often.
+
 ### Composing public vs private messages
+
+#### Current behavior
 
 > - Current behavior
 >   - In Mastodon messages are public by default (in the previous case the user would have shown a “world” icon and the user needs to click the “envelope” icon to make the message private.
->
+
+In the default Mastodon web user interface, messages are public by default.
+In many applications, it is preferable to assume private-by-default.
+However, Mastodon's interface aims to replicate a Twitter-like "public broadcasting" experience.
+This is a perfectly acceptable choice, but the challenge comes in when switching between public and private contexts.
+
+![Switching the interface from public to private in the Mastodon UI](secure-user-interfaces-assets/mastodon-switch-to-private.png)
+
+Switching from public to private is done by clicking on the "world" icon, which represents public posting, and selecting the "envelope" icon, which represents private posting.
+Between the envelope and a header that gives more information about private messaging, these are the primary indicators that the user is in private messaging mode.
+The same interface of targeting another user with `@` and typing characters through completion suggestions exists in private mode, but now takes on different implications: rather than merely mentioning other users, we are now also indicating that they are the sole intended recipients of the message.
+
+#### Proposed changes
+
 > - Changes: maybe none!
 >   - Consider changing default from private mode vs. public mode -- perhaps this could be made obvious by a change from light mode to dark mode.
 >   - NOTE: private by default is like e-mail (may start with To: box on top), public by default is like twitter (make it look like a tweet box)..
 >   - NOTE: movies sometimes use different color balance to guide the viewer to understand when multiple timelines are interleaved.
->
+
+The primary risk that comes from this interface is that it may be difficult for the user to identify when they are in "public posting mode" versus "private posting mode".
+Posting a message publicly that was intended to be private can have consequences ranging from mere embarassment to a violation of confidentiality to serious disclosure of personally identifiable information.
+
+How can we help users move between these two worlds safely?
+The world of cinema give us some help; in many movies, users are presented with a story that is spread across multiple timelines, ranging from past to present to future.
+Many filmmakers employ a trick so that users conceptually understand what era they are viewing in the timeline with no confusion, despite frequent context switches: each era provides a visual hint so that it "looks" different.
+The present may be displayed unfiltered, whereas the past may be in sepia tones or black and white, and the future may have blurry edges to the screen or have a "futuristic" style of lighting (think high contrast "dark" scenes with glowing neon lights).
+
+**TODO:** insert mockup of change
+
+In a similar way, we propose not only a distinctive visual style, but a distinctive workflow for each mode of interaction.
+There is no need to invent new workflows, since familiar workflows already exist.
+For public interaction, we recommend a Twitter-style interface, which is to say the default interface that Mastodon's web UI already provides.
+For private interaction, we recommend something closer to an email-style interface.
+All that is needed to switch to this style of interaction is to move "addressing" to its own input box, akin to how users are already filling in a separate widget for the "To:" field in email interfaces.
+This has the added bonus that conversing about another user does not accidentally send the message to that user when this was unintended (a mistake that authors of this article have made in the current Mastodon interface).
+
+#### What we have accomplished
+
 > - Accomplishment
 >   - User should not be confused about if message composition is public or private.
+
+By switching the user experiences between public and private messaging to two existing distinct but familiar interfaces (Twitter-style vs email-style), users are much more likely to understand what kind of communication they are behaving in.
+We have also avoided some cases where discussing another user privately unintentionally includes them as a recipient of the message, which can be awkward to say the least, or much worse if informing a trusted colleague about a known abusive participant in the network.
 
 ### Onboarding new users
 
@@ -223,6 +277,9 @@ If Tom Marble knew that cwebber would like to message Lain, Tom Marble could cha
 > Gargron’s response:
 >
 > “The completion prioritizes people you follow. I personally remember display names more than usernames. A petname system would provide convenience in case of people who change their display name often for jokes, but I don't see what protections it would provide that prioritizing people you follow doesn't. It's not like you would define petnames for people you don't follow, would you?” https://mastodon.social/@Gargron/102730145345440621
+
+### Informing of changes to proposed names
+
 
 ## Don't pretend we can prevent what we cannot
 
