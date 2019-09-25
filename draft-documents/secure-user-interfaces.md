@@ -121,11 +121,11 @@ If Tom Marble knew that cwebber would like to message Lain, Tom Marble could cha
 
 <img alt="onboarding1.jpg" src="secure-user-interfaces-assets/onboarding1.jpg" width="50%" height="50%">
 
-![onboarding2.jpg](secure-user-interfaces-assets/onboarding2.jpg)
+<img alt="onboarding2.jpg" src="secure-user-interfaces-assets/onboarding2.jpg" width="50%" height="50%">
 
-![onboarding3.jpg](secure-user-interfaces-assets/onboarding3.jpg)
+<img alt="onboarding3.jpg" src="secure-user-interfaces-assets/onboarding3.jpg" width="50%" height="50%">
 
-![onboarding4.jpg](secure-user-interfaces-assets/onboarding4.jpg)
+<img alt="onboarding4.jpg" src="secure-user-interfaces-assets/onboarding4.jpg" width="50%" height="50%">
 
 > - Current behavior
 >   - User chooses their user address (“username”), proposed name and user avatar
@@ -141,7 +141,7 @@ If Tom Marble knew that cwebber would like to message Lain, Tom Marble could cha
 
 ### Viewing profile
 
-![view-profile-b-slade.jpg](secure-user-interfaces-assets/view-profile-b-slade.jpg)
+<img alt="view-profile-b-slade.jpg" src="secure-user-interfaces-assets/view-profile-b-slade.jpg" width="50%" height="50%">
 
 > - Current behavior
 >   - View proposed name
@@ -166,7 +166,7 @@ If Tom Marble knew that cwebber would like to message Lain, Tom Marble could cha
 
 ### Searching for users
 
-![searching-for-users.jpg](secure-user-interfaces-assets/searching-for-users.jpg)
+<img alt="searching-for-users.jpg" src="secure-user-interfaces-assets/searching-for-users.jpg" width="50%" height="50%">
 
 > - Current behavior
 >   - Enter partial information: Mastodon shows a list of proposed matches (each with proposed name, user address and user avatar).
@@ -199,7 +199,7 @@ If Tom Marble knew that cwebber would like to message Lain, Tom Marble could cha
 
 ### Contact management
 
-![contact-management.jpg](secure-user-interfaces-assets/contact-management.jpg)
+<img alt="contact-management.jpg" src="secure-user-interfaces-assets/contact-management.jpg" width="50%" height="50%">
 
 > - Current behavior
 >   - One must view one’s own profile and then click on followers to access contacts.
@@ -213,7 +213,7 @@ If Tom Marble knew that cwebber would like to message Lain, Tom Marble could cha
 
 ### Receiving message
 
-![receiving-message.jpg](secure-user-interfaces-assets/receiving-message.jpg)
+<img alt="receiving-message.jpg" src="secure-user-interfaces-assets/receiving-message.jpg" width="50%" height="50%">
 
 > - Current behavior
 >   - Shows user avatar, proposed name, user address and then the message.
@@ -270,7 +270,7 @@ For now we leave it with the 10 principles mentioned in the Ka-Ping Yee’s semi
 
 ### TODO: New principles
 
-![functionality-v-safety.jpg](secure-user-interfaces-assets/functionality-v-safety.jpg)
+<img alt="functionality-v-safety.jpg" src="secure-user-interfaces-assets/functionality-v-safety.jpg" width="50%" height="50%">
 
 > Fundamental Tradeoff:
 >
