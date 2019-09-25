@@ -104,6 +104,8 @@ If Tom Marble knew that cwebber would like to message Lain, Tom Marble could cha
 
 ### Composing public vs private messages
 
+![mastodon-public-address-gargron.png](secure-user-interfaces-assets/mastodon-public-address-gargron.png)
+
 > - Current behavior
 >   - In Mastodon messages are public by default (in the previous case the user would have shown a “world” icon and the user needs to click the “envelope” icon to make the message private.
 >
@@ -116,6 +118,14 @@ If Tom Marble knew that cwebber would like to message Lain, Tom Marble could cha
 >   - User should not be confused about if message composition is public or private.
 
 ### Onboarding new users
+
+![onboarding1.jpg](secure-user-interfaces-assets/onboarding1.jpg)
+
+![onboarding2.jpg](secure-user-interfaces-assets/onboarding2.jpg)
+
+![onboarding3.jpg](secure-user-interfaces-assets/onboarding3.jpg)
+
+![onboarding4.jpg](secure-user-interfaces-assets/onboarding4.jpg)
 
 > - Current behavior
 >   - User chooses their user address (“username”), proposed name and user avatar
@@ -130,6 +140,8 @@ If Tom Marble knew that cwebber would like to message Lain, Tom Marble could cha
 >   - The rationale for removing user address is that 1) it is likely that in the future this will be a long, complicated string of characters [example: in the C language a pointer variable refers to a memory address, but we don’t care about the specific value of that memory address] and 2) We want to consciously move away from giving the user address importance (and specifically giving it real estate in the UI). NOTE: this will be hard for users because we are accustomed to giving importance to usernames and email addresses.
 
 ### Viewing profile
+
+![view-profile-b-slade.jpg](secure-user-interfaces-assets/view-profile-b-slade.jpg)
 
 > - Current behavior
 >   - View proposed name
@@ -153,6 +165,8 @@ If Tom Marble knew that cwebber would like to message Lain, Tom Marble could cha
 >   - We’ve opened ourselves up to sadness - using SADs (self authenticating designators)
 
 ### Searching for users
+
+![searching-for-users.jpg](secure-user-interfaces-assets/searching-for-users.jpg)
 
 > - Current behavior
 >   - Enter partial information: Mastodon shows a list of proposed matches (each with proposed name, user address and user avatar).
@@ -185,6 +199,8 @@ If Tom Marble knew that cwebber would like to message Lain, Tom Marble could cha
 
 ### Contact management
 
+![contact-management.jpg](secure-user-interfaces-assets/contact-management.jpg)
+
 > - Current behavior
 >   - One must view one’s own profile and then click on followers to access contacts.
 >
@@ -196,6 +212,8 @@ If Tom Marble knew that cwebber would like to message Lain, Tom Marble could cha
 >   - By adopting the other changes contact management will benefit.
 
 ### Receiving message
+
+![receiving-message.jpg](secure-user-interfaces-assets/receiving-message.jpg)
 
 > - Current behavior
 >   - Shows user avatar, proposed name, user address and then the message.
@@ -251,6 +269,8 @@ For now we leave it with the 10 principles mentioned in the Ka-Ping Yee’s semi
 - **Clarity:** The effect of any security-relevant action must be clearly apparent to the user before the action is taken.
 
 ### TODO: New principles
+
+![functionality-v-safety.jpg](secure-user-interfaces-assets/functionality-v-safety.jpg)
 
 > Fundamental Tradeoff:
 >
@@ -377,10 +397,6 @@ See also [Not One Click for Security](https://www.hpl.hp.com/techreports/2009/HP
 
 These may be incorporated directly or possibly chopped up and/or replaced with
 artist renderings.
-
-## functionality-v-safety.jpg
-
-![functionality-v-safety.jpg](secure-user-interfaces-assets/functionality-v-safety.jpg)
 
 ## whiteboard.jpg
 
