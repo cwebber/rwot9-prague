@@ -119,7 +119,7 @@ If Tom Marble knew that cwebber would like to message Lain, Tom Marble could cha
 
 ### Onboarding new users
 
-![onboarding1.jpg](secure-user-interfaces-assets/onboarding1.jpg) <!-- .element style="width: 50%; height: 50%;" -->
+![onboarding1.jpg](secure-user-interfaces-assets/onboarding1.jpg) <!-- .element width="50%"  height="50%" -->
 
 ![onboarding2.jpg](secure-user-interfaces-assets/onboarding2.jpg)
 
